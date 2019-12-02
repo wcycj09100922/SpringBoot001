@@ -1,0 +1,17 @@
+server:
+  port: 8765
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://47.105.171.105:3306/shiro
+    username: root
+    password: 123456
+  jpa:
+    database: MYSQL
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
